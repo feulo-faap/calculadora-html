@@ -7,8 +7,18 @@
         <h1>
             APLICATIVO DE CALCULADORA
         </h1>
-    <input type="number" name="numero1">
-    <input type="number" name="numero2">
-    <span id="resutado"></span>
+    <input type="number" id="n1" name="numero1">
+    <input type="number" id="n2" name="numero2">
+    <span id="resultado"></span>
+    <button onclick="soma()">calcular</button>
+    <script>
+        function soma(){
+            let n1 = Number(document.querySelector("#n1").value)
+            let n2 = Number(document.querySelector("#n2").value)
+            let soma = n1 + n2
+            let resultado = document.querySelector("#resultado")
+            resultado.innerText = soma
+        }
+    </script>
     </body>
 </html>
